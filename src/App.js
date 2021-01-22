@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+import { Container, Board, IconList, IconListItem, Icon, IconMoon } from './styles/common';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <h1>Css Collection</h1>
+      <h4>Author: Ally Chen</h4>
+      <Board>
+        <IconList>
+          <IconListItem>
+            <Icon><IconMoon /></Icon>
+            <span>moon</span>
+          </IconListItem>
+        </IconList>
+      </Board>
+    </Container>
   );
 }
 
