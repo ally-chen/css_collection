@@ -250,12 +250,13 @@ export const Icon = styled.div.attrs(({size, color}) => ({
 `;
 
 export const IconListItem = styled.li`
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  font-size: 14px;
   ${Icon} {
     margin-bottom: 4px;
   }
