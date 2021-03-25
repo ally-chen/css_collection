@@ -51,7 +51,7 @@ export const Icon = styled.div.attrs(({size, color}) => ({
   font-size: ${({size}) => `${size}px` };
   width: ${({size}) => `${size}px` };
   height: ${({size}) => `${size}px` };
-  &.ai-${iconMap[0]} {
+  &.ai-moon {
     border-radius: 50%;
     background-color: transparent;
     box-shadow: 0.26em 0.26em 0 0 ${({color}) => color};
@@ -61,7 +61,7 @@ export const Icon = styled.div.attrs(({size, color}) => ({
       padding-bottom: 100%;
     }
   }
-  &.ai-${iconMap[1]} {
+  &.ai-heart {
     background-color: ${({color}) => color};
     transform: translate(0, 5%) rotate(-45deg) scale(0.5);
     &:before, &:after {
@@ -81,7 +81,7 @@ export const Icon = styled.div.attrs(({size, color}) => ({
       top: -55%;
     }
   }
-  &.ai-${iconMap[2]} {
+  &.ai-hexagram {
     &:before, &:after {
       content: "";
       width: 0;
@@ -101,7 +101,7 @@ export const Icon = styled.div.attrs(({size, color}) => ({
       bottom: 0.233em;
     }
   }
-  &.ai-${iconMap[3]} {
+  &.ai-cloud {
     transform: rotate(45deg);
     &:before, &:after {
       content: "";
@@ -122,7 +122,7 @@ export const Icon = styled.div.attrs(({size, color}) => ({
       top: 10%
     }
   }
-  &.ai-${iconMap[4]} {
+  &.ai-check {
     &:before {
       content: '';
       border-left: 0.1em solid ${({color}) => color};
@@ -134,7 +134,7 @@ export const Icon = styled.div.attrs(({size, color}) => ({
       margin-top: -0.125em;
     }
   }
-  &.ai-${iconMap[5]} {
+  &.ai-plus {
     &:before {
       content: '';
       width: 60%;
@@ -142,7 +142,7 @@ export const Icon = styled.div.attrs(({size, color}) => ({
       background-color: ${({color}) => color};
     }
   }
-  &.ai-${iconMap[6]} {
+  &.ai-minus {
     &:before, &:after {
       content: '';
       width: 60%;
@@ -154,7 +154,7 @@ export const Icon = styled.div.attrs(({size, color}) => ({
       transform: rotate(90deg);
     }
   }
-  &.ai-${iconMap[7]} {
+  &.ai-angle {
     &:before {
       content: '';
       border-top: 0.1em solid ${({color}) => color};
@@ -166,7 +166,7 @@ export const Icon = styled.div.attrs(({size, color}) => ({
       margin-left: -0.125em;
     }
   }
-  &.ai-${iconMap[8]} {
+  &.ai-double-angle {
     &:before, &:after {
       content: '';
       border-top: 0.075em solid ${({color}) => color};
@@ -183,7 +183,7 @@ export const Icon = styled.div.attrs(({size, color}) => ({
       margin-left: -0.125em;
     }
   }
-  &.ai-${iconMap[9]} {
+  &.ai-arrow {
     &:before {
       content: '';
       width: 60%;
@@ -203,7 +203,7 @@ export const Icon = styled.div.attrs(({size, color}) => ({
       right: 25%;
     }
   }
-  &.ai-${iconMap[10]} {
+  &.ai-bar-menu {
     &:before {
       content: '';
       width: 60%;
@@ -219,14 +219,14 @@ export const Icon = styled.div.attrs(({size, color}) => ({
       position: absolute;
     }
   }
-  &.ai-${iconMap[11]} {
+  &.ai-dot-menu {
     &:before {
       content: '';
       width: 60%;
       border-top: 0.15em dotted ${({color}) => color};
     }
   }
-  &.ai-${iconMap[12]} {
+  &.ai-search {
     &:before {
       content: '';
       width: 30%;
@@ -245,6 +245,47 @@ export const Icon = styled.div.attrs(({size, color}) => ({
       background-color: ${({color}) => color};
       right: 15%;
       bottom: 25%;
+    }
+  }
+  &.ai-user {
+    &:before {
+      content: '';
+      width: 36%;
+      padding-bottom: 36%;
+      background-color: ${({color}) => color};
+      border-radius: 50%;
+      margin-top: -32.5%;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      border-bottom: 0.3em solid ${({color}) => color};
+      border-left: 0.2em solid transparent;
+      border-right: 0.2em solid transparent;
+      bottom: 0.15em;
+      left: calc(50% - 0.3em);
+      width: 0.2em;
+    }
+  }
+  &.ai-wifi {
+    background: radial-gradient(${({color}) => color} 10%,#fff 10%, #fff 20%,${({color}) => color} 20%, ${({color}) => color} 30%,#fff 30%, #fff 40%, ${({color}) => color} 40%, ${({color}) => color} 50%, #FFF 50%, #FFF 60%, ${({color}) => color} 60%, ${({color}) => color} 70%, #FFF 70%) center 0.2em/100% no-repeat;
+    &:before {
+      content: '';
+      position: absolute;
+      border-top: 0.5em solid transparent;
+      border-left: 0.51em solid #fff;
+      height: 0.2em;
+      bottom: 0;
+      left: 0;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      border-top: 0.5em solid transparent;
+      border-right: 0.51em solid #fff;
+      height: 0.2em;
+      bottom: 0;
+      right: 0;
     }
   }
 `;
