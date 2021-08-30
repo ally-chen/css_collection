@@ -1,6 +1,7 @@
 import React from 'react';
 import iconMap from "./iconMap";
 import { Container, Board, IconList, IconListItem, Icon, IconMoon } from './styles/common';
+import  './styles/common.css';
 
 export const useHook = () => {
   const [sizeInput, setSizeInput] = React.useState(30);
